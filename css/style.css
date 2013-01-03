@@ -1,0 +1,100 @@
+.grupo_header {
+	border-bottom: 1px solid #999;
+	margin: 1em 0;
+}
+.partido_header {
+	margin-bottom: .7em;
+	}
+.fila {
+	margin-bottom: .5em;
+}
+.fila span, .partido_header span {
+	display: inline-block;
+}
+
+.match {
+	width: 90px;
+}
+.date {
+	width: 80px;
+}
+.time {
+	width: 70px;
+}
+.teams {
+	width: 300px;
+}
+.teamsro {
+	width: 250px;
+}
+
+
+.teamsro .local {
+	width: 100px;
+}
+
+.teamsro .result {
+	width: 30px;
+}
+.teamsro .visitante {
+	width: 100px;
+	text-align: right;
+}
+
+.teams input {
+	margin-bottom: 0;
+}
+
+.teams .local {
+	width: 130px;
+}
+
+.teams .result {
+	width: 30px;
+}
+.teams .visitante {
+	width: 130px;
+	text-align: right;
+}
+.points {
+	width:30px;
+	margin-left: 2em;
+}
+
+.score {
+	width: 10px;
+}
+
+.pronostico {
+	width: 50px;
+	text-align: center;
+}
+
+.ranking {
+	max-width: 300px;
+}
+.pronosticos {
+	max-width: 400px;
+}
+.label a {
+	color: white;
+	
+}
+@media (max-width: 767px) {
+
+ .badge-puntos:before {
+  		content: "Puntos: ";
+  }
+}
+.nextmatch {
+	
+	background-color: #FFEDC9;
+}
+
+#rankingtable th{
+	white-space: nowrap;
+}
+
+#rankingtable td.center{
+	text-align:center;
+}
