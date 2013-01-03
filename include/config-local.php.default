@@ -1,0 +1,40 @@
+<?php
+
+include_once("adodb/adodb.inc.php");
+include_once("adodb/drivers/adodb-mysql.inc.php");
+
+error_reporting(E_ALL);
+$globals = array();
+$globals['twitter_consumer_key'] = 'Twitterkeyhere';
+$globals['twitter_consumer_secret'] = 'twittersecrethere';
+
+define('CONSUMER_KEY', $globals['twitter_consumer_key']);
+define('CONSUMER_SECRET', $globals['twitter_consumer_secret']);
+
+//Solo para hacer pruebas en local
+if ($_SERVER['SERVER_NAME'] == 'qu.local') {
+	define('OAUTH_CALLBACK', 'http://qu.local/callback.php');
+} else {
+	define('OAUTH_CALLBACK', 'http://quiniela.efectotequila.com/callback.php');
+
+}
+
+class db extends ADODB_mysql{
+		function db(){
+			$conn = &$this;
+			$conn = ADONewConnection('mysql');
+
+			$this->user                             = "usuario";
+			$this->password                         = "contraseña";
+			$this->host                             = "host";
+						
+			$this->database                         = "database";
+			$this->Connect();
+			//Manejo de acentos
+			$this->Execute("SET NAMES 'utf8'");
+			//$this->debug = true; // Debug global
+			//$this->LogSQL();
+		}
+	}
+
+?>
