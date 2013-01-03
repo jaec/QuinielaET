@@ -118,7 +118,7 @@ class partido extends base {
 	}
 
 	function printFlag($team) {
-		$partidos = array("America" => "24x_1", "Atlante" => "24x_2", "Atlas" => "24x_3", "Chivas" => "24x_5", "Ctuz Azul" => "24x_6", "Jaguares" => "24x_7", "Monarcas" => "24x_8", "Pachuca" => "24x_9", "San Luis" => "24x_10", "Monterrey" => "24x_12", "Santos" => "24x_13", "Tigres" => "24x_15", "Toluca" => "24x_16", "Pumas" => "24x_18", "Leon" => "24x_38", "Puebla" => "24x_44", "Queretaro" => "24x_1686", "Xolos" => "24x_1779");
+		$partidos = array("America" => "24x_1", "Atlante" => "24x_2", "Atlas" => "24x_3", "Chivas" => "24x_5", "Cruz Azul" => "24x_6", "Jaguares" => "24x_7", "Monarcas" => "24x_8", "Pachuca" => "24x_9", "San Luis" => "24x_10", "Monterrey" => "24x_12", "Santos" => "24x_13", "Tigres" => "24x_15", "Toluca" => "24x_16", "Pumas" => "24x_18", "Leon" => "24x_38", "Puebla" => "24x_44", "Queretaro" => "24x_1686", "Xolos" => "24x_1779");
 		if (isset($partidos[$team]))
 			return "<img src='/flags/" . $partidos[$team] . ".png' />";
 		else

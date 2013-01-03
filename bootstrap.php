@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Tequiniela Euro 2012</title>
+    <title>Tequiniela Clausura 2013</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -46,7 +46,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="/"> <img src="/img/logo.png" /> Tequiniela - Euro 2012</a>
+          <a class="brand" href="/"> <img src="/img/logo.png" /> Tequiniela - Clausura 2013</a>
 			{HEADER}
         </div>
       </div>

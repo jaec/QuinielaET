@@ -1,7 +1,7 @@
 <? if(! isset($_USER->id)) {
 ?>
 <div class="hero-unit">
-	<h1>Bienvenido a la Tequiniela Euro 2012</h1>
+	<h1>Bienvenido a la Tequiniela Torneo Clausura 2013</h1>
 	<p>
 		Ingresa con tu cuenta de twitter para comenzar
 	</p>

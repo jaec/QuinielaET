@@ -1,0 +1,12 @@
+Options -Indexes
+RewriteEngine On
+RewriteRule ^(home)$ /index.php?seccion=$1 [L]
+RewriteRule ^(reglas)$ /index.php?seccion=$1 [L]
+RewriteRule ^(home)$ /index.php?seccion=$1 [L]
+RewriteRule ^(ranking)$ /index.php?seccion=$1 [L]
+RewriteRule ^(partidos)$ /index.php?seccion=$1 [L]
+RewriteRule ^(pronostico)/(\d+)$ /index.php?seccion=$1&partido=$2 [L]
+RewriteRule ^(contacto)$ /index.php?seccion=$1 [L]
+RewriteRule ^(usuarios)/(\d+)$ /index.php?seccion=$1&usuario=$2 [L]
+RewriteRule ^(login-error)$ /index.php?seccion=$1 [L]
+RewriteRule ^(access-denied)$ /index.php?seccion=$1 [L]

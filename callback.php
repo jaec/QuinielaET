@@ -73,6 +73,39 @@ if (200 == $connection -> http_code) {
 
 		$U -> save();
 
+
+/*Añadimos scores para los partidos existentes */
+require_once ('include/class.partido.php');
+require_once ('include/class.resultado.php');
+	$partidos = new partido();
+	$partidos -> loadAll();
+
+	$results = new resultado();
+	$results -> loadIf(array('usuario' => $U -> id));
+
+	$res = array();
+	while ($results -> next()) {
+		$res[$results -> partido] = array('local' => $results -> local, 'visitante' => $results -> visitante, 'puntos' => $results -> puntos);
+	};
+
+	while ($partidos -> next()) {
+		$puntos = null;
+		if(!isset($res[$partidos -> id]["puntos"])){
+			
+			$fix = new resultado();
+			
+			//partido 	local 	visitante 	usuario 	puntos
+			$fix->partido = $partidos->id;
+			$fix->visitante = 0;
+			$fix->local = 0;
+			$fix->usuario = $U->id;
+			$fix->save();
+						
+		}
+		
+
+	}
+
 		$_SESSION["usuario"] = $U -> usuario;
 		$_SESSION["id"] = $U -> id;
 
