@@ -34,7 +34,14 @@ while($results->next()){
 
 <div class='span12'>
 	<h2> Registra tus marcadores </h2>
-
+	
+<?php	
+if (isset($_GET['saved']) && $_GET['saved'] == "true") {
+?>
+<?php
+	<div id="msg"><span class='badge label-success'>Resultados guardados exitosamente</span></div>
+}
+?>
 			<form action="index_p.php" method="post">
 				<?
 				$grupo = "";
