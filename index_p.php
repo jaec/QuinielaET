@@ -79,5 +79,5 @@ foreach ($_POST as $k => $v) {
 
 session_write_close();
 
-header("Location: /home");
+header("Location: /home?saved=true");
 ?>
